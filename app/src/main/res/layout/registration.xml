@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:id="@+id/registration_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:tint="#fff"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/registration"
+                android:textColor="#fff"
+                android:textSize="18dp"  />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:tint="#fff"
+                android:src="@drawable/ic_email" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:theme="@style/EditTextTheme"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:tint="#fff"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:theme="@style/EditTextTheme"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:tint="#fff"
+                android:src="@drawable/ic_check" />
+
+            <EditText
+                android:id="@+id/register_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:theme="@style/EditTextTheme"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="250dp"
+                android:background="#07BCF8"
+                android:text="@string/register"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

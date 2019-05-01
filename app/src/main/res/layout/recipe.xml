@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/recipe"
+                android:textColor="#333"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:id="@+id/slider_dots"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="230dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/slider"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="250dp"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <FrameLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/item_image_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bread" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_shape" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/item_name_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center"
+                    android:text="Bread" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp">
+
+                <FrameLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/item_image_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cake" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_shape" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/item_name_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center"
+                    android:text="Cake" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="5dp">
+
+                <FrameLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/item_image_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/salad" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_shape" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/item_name_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center"
+                    android:text="Salad" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="5dp">
+
+                <FrameLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/item_image_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pie" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_shape" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/item_name_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center"
+                    android:text="Pie" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            android:layout_marginTop="340dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_like"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/recommended_recipe"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:layout_marginTop="50dp"
+                android:background="#fff">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="140dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/recommend_item_image_1"/>
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/recipe_image_background"
+                            android:tint="#fff"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="100dp"
+                        android:textStyle="bold"
+                        android:text="Baked Potato"
+                        android:id="@+id/recommend_item_title_1"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="120dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/recommend_item_dis_1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="180dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/recommend_item_image_2"/>
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/recipe_image_background"
+                            android:tint="#fff" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="100dp"
+                        android:textStyle="bold"
+                        android:text="Broccoli Bites"
+                        android:id="@+id/recommend_item_title_2"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="120dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/recommend_item_dis_2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="140dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/recommend_item_image_3"/>
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/recipe_image_background"
+                            android:tint="#fff" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="100dp"
+                        android:textStyle="bold"
+                        android:text="The Best Lemon Bars"
+                        android:id="@+id/recommend_item_title_3"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="120dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/recommend_item_dis_3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="10dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="140dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/recommend_item_image_4"/>
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/recipe_image_background"
+                            android:tint="#fff" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="100dp"
+                        android:textStyle="bold"
+                        android:text="Warm Orange Sauce"
+                        android:id="@+id/recommend_item_title_4"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="120dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/recommend_item_dis_4"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="280dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/recommend_item_image_5"/>
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/recipe_image_background"
+                            android:tint="#fff" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="100dp"
+                        android:textStyle="bold"
+                        android:text="Blueberry Sauce"
+                        android:id="@+id/recommend_item_title_5"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="120dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/recommend_item_dis_5"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="280dp"
+                    android:layout_marginLeft="180dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/recommend_item_image_6"/>
+
+                        <ImageView
+                            android:layout_width="176dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/recipe_image_background"
+                            android:tint="#fff" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="100dp"
+                        android:textStyle="bold"
+                        android:text="Best Lemonade Ever"
+                        android:id="@+id/recommend_item_title_6"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="120dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/recommend_item_dis_6"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textSize="10dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

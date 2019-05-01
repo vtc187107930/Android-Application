@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/setting"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/register_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_profile_default"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_tag"
+        android:tint="#fff" />
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/username"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="15dp"
+        android:theme="@style/EditTextTheme" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="290dp"
+        android:background="#07BCF8"
+        android:text="OK"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

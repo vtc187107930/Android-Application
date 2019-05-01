@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Recipe Application</string>
+    <string name="recipe">Recipe</string>
+    <string name="recommended_recipe">Recommended Recipe</string>
+    <string name="showing_nearby_supermarket">Showing Nearby Supermarket</string>
+    <string name="permission_denied">Permission Denied!</string>
+    <string name="please_open_camera_first">Please Open Camera First</string>
+    <string name="you_can_take_photo_now">You Can Take Photo Now</string>
+    <string name="enter">Enter</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="please_login">Please Login</string>
+    <string name="create_recipe">Create Recipe</string>
+    <string name="update_recipe">Update Recipe</string>
+    <string name="favourite_list">Favourite List</string>
+    <string name="language">Language</string>
+    <string name="please_login_first">Please Login First!!</string>
+    <string name="are_you_sure_logout">Are You Sure Logout ??</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="no_account">No Account??</string>
+    <string name="registration">Registration</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="setting">Setting</string>
+    <string name="username">Username</string>
+    <string name="no_recipe">No Recipe</string>
+    <string name="no_favourite">No Favourite</string>
+    <string name="no_result">No Result</string>
+    <string name="search_mark">"Search: "</string>
+    <string name="language_choose">Language Choose</string>
+</resources>

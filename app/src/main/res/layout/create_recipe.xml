@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/create_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/create_recipe"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_create_button"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:id="@+id/create_recipe_button"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_recipe_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <com.example.recipeapplication.AspectRatioImageView
+                android:id="@+id/recipe_image"
+                android:layout_width="176dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                app:aspectRatio="1.78"
+                app:aspectRatioEnabled="true"
+                app:dominantMeasurement="width"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/create_recipe_image"
+                android:background="@color/white"/>
+
+            <EditText
+                android:layout_below="@id/recipe_image"
+                android:id="@+id/create_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/create_recipe_background"
+                android:hint="Title"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/create_description"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/create_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/create_recipe_background"
+                android:gravity="top|left"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="vertical"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_below="@+id/create_prep"
+                android:id="@+id/create_tips"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/create_recipe_background"
+                android:hint="Tips (Not Necessary)"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_below="@id/step_scroll"
+                android:id="@+id/create_prep"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/create_recipe_background"
+                android:hint="Prep"
+                android:maxLength="3"
+                android:inputType = "number"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_below="@id/step_scroll"
+                android:id="@+id/create_cook"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/create_recipe_background"
+                android:hint="Cook"
+                android:maxLength="3"
+                android:inputType = "number"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_below="@id/step_scroll"
+                android:id="@+id/create_ready"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/create_recipe_background"
+                android:hint="Ready In"
+                android:maxLength="3"
+                android:inputType = "number"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="15dp" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/ingredient_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="260dp"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:id="@+id/ingredient_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ingredient_add"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="240dp"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_add" />
+
+                    <ImageButton
+                        android:id="@+id/ingredient_minus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="280dp"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_minus" />
+
+                    <EditText
+                        android:id="@+id/ingredients_num_1"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/create_recipe_background"
+                        android:hint="Num"
+                        android:maxLength="3"
+                        android:inputType = "number"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/ingredients_name_1"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="85dp"
+                        android:background="@drawable/create_recipe_background"
+                        android:hint="Ingredients"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/step_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="460dp"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:id="@+id/step_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/step_add"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="240dp"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_add" />
+
+                    <ImageButton
+                        android:id="@+id/step_minus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="280dp"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_minus" />
+
+                    <EditText
+                        android:id="@+id/step_1"
+                        android:layout_width="225dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/create_recipe_background"
+                        android:hint="Step 1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/profile_background_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/profile"
+                android:textColor="#333"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/logInOrOut"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_login"
+                android:tint="#333" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/ic_profile_default" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="@string/please_login"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:id="@+id/create_recipe"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/profile_round_btn"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_create_recipe"
+                android:elevation="5dp"
+                android:tint="#333"/>
+
+            <TextView
+                android:layout_below="@+id/create_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/create_recipe"
+                android:textColor="#333"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="180dp">
+
+            <ImageButton
+                android:id="@+id/update_recipe"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/profile_round_btn"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_update_recipe"
+                android:elevation="5dp"
+                android:tint="#333"/>
+
+            <TextView
+                android:layout_below="@+id/update_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/update_recipe"
+                android:textColor="#333"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:id="@+id/favourite_list"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/profile_round_btn"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_love"
+                android:elevation="5dp"
+                android:tint="#333"/>
+
+            <TextView
+                android:layout_below="@+id/favourite_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/favourite_list"
+                android:textColor="#333"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="180dp">
+
+            <ImageButton
+                android:id="@+id/language_list"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/profile_round_btn"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_language"
+                android:elevation="5dp"
+                android:tint="#333"/>
+
+            <TextView
+                android:layout_below="@+id/language_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/language"
+                android:textColor="#333"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

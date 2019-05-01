@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "572126362390",
+    "firebase_url": "https://sigma-kayak-234507.firebaseio.com",
+    "project_id": "sigma-kayak-234507",
+    "storage_bucket": "sigma-kayak-234507.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572126362390:android:a4dcb4925c944a5e",
+        "android_client_info": {
+          "package_name": "com.example.recipeapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572126362390-19j98dh265n3defg62j5k37gj2ji8d0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recipeapplication",
+            "certificate_hash": "49fd83ce8a9ef8bef4e99423aeb8c99695e2a293"
+          }
+        },
+        {
+          "client_id": "572126362390-0n17gc76eadb2r9aalq00i7t84giqgmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC6LklbaQaxKJfqcruaooOrl4asyFNWE4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572126362390-0n17gc76eadb2r9aalq00i7t84giqgmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

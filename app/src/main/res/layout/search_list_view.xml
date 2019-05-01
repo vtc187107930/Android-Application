@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="128dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/search_list_image"/>
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/recipe_image_background" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:text="Title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/search_list_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:maxLines="3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="10dp"
+            android:ellipsize="end"
+            android:text="Description"
+            android:id="@+id/search_list_description"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

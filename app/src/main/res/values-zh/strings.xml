@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recipe Application</string>
+    <string name="recipe">食譜</string>
+    <string name="recommended_recipe">推薦食譜</string>
+    <string name="showing_nearby_supermarket">顯示附近超級市場</string>
+    <string name="permission_denied">權限錯誤</string>
+    <string name="please_open_camera_first">請先開啟相機</string>
+    <string name="you_can_take_photo_now">現在可以拍照</string>
+    <string name="enter">確認</string>
+    <string name="search">搜尋</string>
+    <string name="profile">個人資料</string>
+    <string name="please_login">請先登入</string>
+    <string name="create_recipe">創作食譜</string>
+    <string name="update_recipe">更新食譜</string>
+    <string name="favourite_list">我的最愛</string>
+    <string name="language">語言</string>
+    <string name="please_login_first">請先登入!!</string>
+    <string name="are_you_sure_logout">確定登出??</string>
+    <string name="login">登入</string>
+    <string name="logout">登出</string>
+    <string name="cancel">取消</string>
+    <string name="email">電郵</string>
+    <string name="password">密碼</string>
+    <string name="no_account">申請帳號</string>
+    <string name="registration">註冊</string>
+    <string name="confirm_password">確認密碼</string>
+    <string name="register">註冊</string>
+    <string name="setting">個人資料設定</string>
+    <string name="username">用戶名稱</string>
+    <string name="no_favourite">沒有最愛</string>
+    <string name="no_recipe">沒有食譜</string>
+    <string name="no_result">沒有結果</string>
+    <string name="search_mark">"搜尋: "</string>
+    <string name="language_choose">語言選擇</string>
+</resources>
